@@ -36,17 +36,17 @@ function App() {
     <div className={backgroundClass}>
       <div className="flex flex-col items-center justify-center gap-[20px] rounded-[10px] bg-white w-[250px] h-[250px]">
         <div className="font-stretch-200% font-bold">COUNTER : {counter}</div>
-        <p className="flex gap-[30px] font-semibold font-stretch-150%">
-          <button  onClick={() => {updateCounter(1);}}>+1</button>
-          <button onClick={() => {updateCounter(-1);}}>-1</button>
+        <p className="flex gap-[30px] font-semibold font-stretch-150% ">
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(1);}}>+1</button>
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(-1);}}>-1</button>
         </p>
         <p className="flex gap-[30px] font-semibold font-stretch-150%">
-          <button onClick={() => {updateCounter(10);}}>+10</button>
-          <button onClick={() => {updateCounter(-10);}}>-10</button>
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(10);}}>+10</button>
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(-10);}}>-10</button>
         </p>
         <p className="flex gap-[30px] font-semibold font-stretch-150%">
-          <button onClick={() => {updateCounter(100);}}>+100</button>
-          <button onClick={() => {updateCounter(-100);}}>-100</button>
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(100);}}>+100</button>
+          <button className="border-3 rounded-xl w-[67px] h-[43px] cursor-pointer" onClick={() => {updateCounter(-100);}}>-100</button>
         </p>
       </div>
     </div>
